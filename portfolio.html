@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="w-full py-[15px] fixed">
+      <div class="container mx-auto">
+        <nav class="nav flex items-center justify-between">
+          <div class="nav__menu text-[30px] cursor-pointer" id="menu">
+            <i class="bx bx-menu-alt-right"></i>
+          </div>
+          <div class="nav__logo font-medium text-[30px]">
+            <a href="index.html">LOGO</a>
+          </div>
+          <ul class="nav__ul flex gap-[16px]">
+            <li class="font-bold hover:text-[#6911AD]">
+              <a href="index.html">О компании</a>
+            </li>
+            <li class="font-bold hover:text-[#6911AD]">
+              <a href="/portfolio.html">Портфолио</a>
+            </li>
+            <li class="font-bold hover:text-[#6911AD]">
+              <a href="services.html">Услуги</a>
+            </li>
+            <li class="font-bold hover:text-[#6911AD]">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="nav__left flex gap-[40px] items-center">
+            <button 
+            class="w-20 h-10 rounded-full bg-white flex items-center transition duration-300 focus:outline-none shadow"
+            onclick="toggleTheme()">
+            <div
+                id="switch-toggle"
+                class="w-12 h-12 relative rounded-full transition duration-500 transform bg-yellow-500 -translate-x-2 p-1 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+            </div>
+        </button>
+            <div class="nav__contact">
+              <p class="font-bold text-[20px]">+998 90 777-77-77</p>
+              <p class="font-bold">chotatam@gmail.com</p>
+            </div>
+            <div class="nav__btn">
+              <button
+                class="ease-in-out duration-300 bg-[#6911AD] text-white py-[14px] px-[21px] rounded-[7px] font-bold hover:bg-[#5454D4]"
+              >
+                Заказать звонок
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="menu pt-[18px] ease-in-out duration-300">
+      <div class="container px-[15px]">
+        <div
+          class="menu__header flex justify-between items-center text-white ease-linear"
+        >
+          <h1 class="text-[32px] font-normal">LOGO</h1>
+          <i class="bx bx-x text-[32px] cursor-pointer" id="close"></i>
+        </div>
+        <div class="menu__content">
+          <ul class="flex gap-[30px] flex-col mt-[40px]">
+            <li class="font-bold text-white text-[26px]">
+              <a href="index.html">О компании</a>
+            </li>
+            <li class="font-bold text-white text-[26px]">
+              <a href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="font-bold text-white text-[26px]">
+              <a href="services.html">Услуги</a>
+            </li>
+            <li class="font-bold text-white text-[26px]">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="menu__btn text-center">
+            <button
+              class="ease-in-out duration-300 bg-[#6911AD] text-white py-[22px] px-[44px] rounded-[141px] font-bold hover:bg-[#5454D4] mt-[292px] mb-[96px]"
+            >
+              (99) 999 9999
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="container mx-auto">
+        <div class="projects__title">
+          <h1 class="font-bold text-[36px] pt-[150px] text-center mb-[40px]">
+            Bajargan loyihalarimiz
+          </h1>
+        </div>
+        <div class="project__items flex justify-center bg-white mb-[40px]">
+          <ul
+            class="projects__ul flex justify-center flex-wrap gap-[60px] border-2 border-[rgba(255, 255, 255, 0.5)] rounded-[90px] w-[664px] h-[55px] py-[16px] px-[35px]"
+          >
+            <li class="font-bold text-[16px]"><a href="#">Barchasi</a></li>
+            <li class="font-bold text-[16px]"><a href="#">Veb sayt</a></li>
+            <li class="font-bold text-[16px]"><a href="#">Veb dizayn</a></li>
+            <li class="font-bold text-[16px]"><a href="#">SMM</a></li>
+            <li class="font-bold text-[16px]"><a href="#">Mobil ilova</a></li>
+          </ul>
+        </div>
+        <div class="project__cards">
+          <div class="project__cards--item w-[400px] h-[362px] cursor-pointer">
+            <img src="/images/img1.png" alt="img" class="w-[400px] h-[362px]" />
+            <div
+              class="item__content w-[375px] h-[332px] rounded-[5px] opacity-0 hover:opacity-100 ease-in-out duration-200 relative bottom-[346px] left-[13px]"
+            >
+              <div class="content py-[30px] px-[25px] justify-between">
+                <p class="text-white absolute bottom-[30px]">
+                  UYMAKON mobil ilovasi
+                </p>
+                <i
+                  class="bx bx-right-top-arrow-circle text-white text-[40px] absolute right-[25px]"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="project__cards--item w-[400px] h-[362px] cursor-pointer">
+            <img src="/images/img2.png" alt="img" class="w-[400px] h-[362px]" />
+            <div
+              class="item__content w-[375px] h-[332px] rounded-[5px] opacity-0 hover:opacity-100 ease-in-out duration-200 relative bottom-[346px] left-[13px]"
+            >
+              <div class="content py-[30px] px-[25px] justify-between">
+                <p class="text-white absolute bottom-[30px]">
+                  UYMAKON mobil ilovasi
+                </p>
+                <i
+                  class="bx bx-right-top-arrow-circle text-white text-[40px] absolute right-[25px]"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="project__cards--item w-[400px] h-[362px] cursor-pointer">
+            <img src="/images/img3.png" alt="img" class="w-[400px] h-[362px]" />
+            <div
+              class="item__content w-[375px] h-[332px] rounded-[5px] opacity-0 hover:opacity-100 ease-in-out duration-200 relative bottom-[346px] left-[13px]"
+            >
+              <div class="content py-[30px] px-[25px] justify-between">
+                <p class="text-white absolute bottom-[30px]">
+                  UYMAKON mobil ilovasi
+                </p>
+                <i
+                  class="bx bx-right-top-arrow-circle text-white text-[40px] absolute right-[25px]"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="project__cards--item w-[400px] h-[362px] cursor-pointer">
+            <img src="/images/img4.png" alt="img" class="w-[400px] h-[362px]" />
+            <div
+              class="item__content w-[375px] h-[332px] rounded-[5px] opacity-0 hover:opacity-100 ease-in-out duration-200 relative bottom-[346px] left-[13px]"
+            >
+              <div class="content py-[30px] px-[25px] justify-between">
+                <p class="text-white absolute bottom-[30px]">
+                  UYMAKON mobil ilovasi
+                </p>
+                <i
+                  class="bx bx-right-top-arrow-circle text-white text-[40px] absolute right-[25px]"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="project__cards--item w-[400px] h-[362px] cursor-pointer">
+            <img src="/images/img5.png" alt="img" class="w-[400px] h-[362px]" />
+            <div
+              class="item__content w-[375px] h-[332px] rounded-[5px] opacity-0 hover:opacity-100 ease-in-out duration-200 relative bottom-[346px] left-[13px]"
+            >
+              <div class="content py-[30px] px-[25px] justify-between">
+                <p class="text-white absolute bottom-[30px]">
+                  UYMAKON mobil ilovasi
+                </p>
+                <i
+                  class="bx bx-right-top-arrow-circle text-white text-[40px] absolute right-[25px]"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="project__cards--item w-[400px] h-[362px] cursor-pointer">
+            <img src="/images/img6.png" alt="img" class="w-[400px] h-[362px]" />
+            <div
+              class="item__content w-[375px] h-[332px] rounded-[5px] opacity-0 hover:opacity-100 ease-in-out duration-200 relative bottom-[346px] left-[13px]"
+            >
+              <div class="content py-[30px] px-[25px] justify-between">
+                <p class="text-white absolute bottom-[30px]">
+                  UYMAKON mobil ilovasi
+                </p>
+                <i
+                  class="bx bx-right-top-arrow-circle text-white text-[40px] absolute right-[25px]"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="project__cards--item w-[400px] h-[362px] cursor-pointer">
+            <img src="/images/img1.png" alt="img" class="w-[400px] h-[362px]" />
+            <div
+              class="item__content w-[375px] h-[332px] rounded-[5px] opacity-0 hover:opacity-100 ease-in-out duration-200 relative bottom-[346px] left-[13px]"
+            >
+              <div class="content py-[30px] px-[25px] justify-between">
+                <p class="text-white absolute bottom-[30px]">
+                  UYMAKON mobil ilovasi
+                </p>
+                <i
+                  class="bx bx-right-top-arrow-circle text-white text-[40px] absolute right-[25px]"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="project__cards--item w-[400px] h-[362px] cursor-pointer">
+            <img src="/images/img2.png" alt="img" class="w-[400px] h-[362px]" />
+            <div
+              class="item__content w-[375px] h-[332px] rounded-[5px] opacity-0 hover:opacity-100 ease-in-out duration-200 relative bottom-[346px] left-[13px]"
+            >
+              <div class="content py-[30px] px-[25px] justify-between">
+                <p class="text-white absolute bottom-[30px]">
+                  UYMAKON mobil ilovasi
+                </p>
+                <i
+                  class="bx bx-right-top-arrow-circle text-white text-[40px] absolute right-[25px]"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="project__cards--item w-[400px] h-[362px] cursor-pointer">
+            <img src="/images/img3.png" alt="img" class="w-[400px] h-[362px]" />
+            <div
+              class="item__content w-[375px] h-[332px] rounded-[5px] opacity-0 hover:opacity-100 ease-in-out duration-200 relative bottom-[346px] left-[13px]"
+            >
+              <div class="content py-[30px] px-[25px] justify-between">
+                <p class="text-white absolute bottom-[30px]">
+                  UYMAKON mobil ilovasi
+                </p>
+                <i
+                  class="bx bx-right-top-arrow-circle text-white text-[40px] absolute right-[25px]"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="project__cards--item w-[400px] h-[362px] cursor-pointer">
+            <img src="/images/img4.png" alt="img" class="w-[400px] h-[362px]" />
+            <div
+              class="item__content w-[375px] h-[332px] rounded-[5px] opacity-0 hover:opacity-100 ease-in-out duration-200 relative bottom-[346px] left-[13px]"
+            >
+              <div class="content py-[30px] px-[25px] justify-between">
+                <p class="text-white absolute bottom-[30px]">
+                  UYMAKON mobil ilovasi
+                </p>
+                <i
+                  class="bx bx-right-top-arrow-circle text-white text-[40px] absolute right-[25px]"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="project__cards--item w-[400px] h-[362px] cursor-pointer">
+            <img src="/images/img5.png" alt="img" class="w-[400px] h-[362px]" />
+            <div
+              class="item__content w-[375px] h-[332px] rounded-[5px] opacity-0 hover:opacity-100 ease-in-out duration-200 relative bottom-[346px] left-[13px]"
+            >
+              <div class="content py-[30px] px-[25px] justify-between">
+                <p class="text-white absolute bottom-[30px]">
+                  UYMAKON mobil ilovasi
+                </p>
+                <i
+                  class="bx bx-right-top-arrow-circle text-white text-[40px] absolute right-[25px]"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="project__cards--item w-[400px] h-[362px] cursor-pointer">
+            <img src="/images/img6.png" alt="img" class="w-[400px] h-[362px]" />
+            <div
+              class="item__content w-[375px] h-[332px] rounded-[5px] opacity-0 hover:opacity-100 ease-in-out duration-200 relative bottom-[346px] left-[13px]"
+            >
+              <div class="content py-[30px] px-[25px] justify-between">
+                <p class="text-white absolute bottom-[30px]">
+                  UYMAKON mobil ilovasi
+                </p>
+                <i
+                  class="bx bx-right-top-arrow-circle text-white text-[40px] absolute right-[25px]"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div
+          class="contact border-[1px] border-[#999999] w-full rounded-[20px] mt-[120px]"
+        >
+          <div
+            class="contact__items flex justify-between items-center py-[60px] px-[80px] gap-[10px]"
+          >
+            <div class="contact__items--left">
+              <div class="contact__items--left-title mb-[40px]">
+                <h1 class="text-[28px] font-semibold">
+                  Sizni bir finjon qahva ustida loyihangizni
+                  batafsil muhokama qilishga mamnuniyat ila 
+                  taklif qilamiz.
+                </h1>
+              </div>
+              <div class="contact__items--left-inputs flex flex-col justify-center gap-[20px]">
+                <input
+                  type="text"
+                  placeholder="Ismingiz"
+                  id="name"
+                  class="border-b-[1px] border-[#272727] max-w-[499px] p-[8px]"
+                />
+                <input
+                  type="number"
+                  placeholder="Telefon raqamingiz"
+                  id="number"
+                  class="border-b-[1px] border-[#272727] max-w-[499px] p-[8px]"
+                />
+                <input
+                  type="text"
+                  placeholder="G'oyangiz xaqida qisqacha (Muhim emas)"
+                  id="text"
+                  class="border-b-[1px] border-[#272727] max-w-[499px] p-[8px]"
+                />
+              </div>
+              <div class="contact__items--left-checkboxes my-[40px]">
+                <h1 class="font-semibold text-[24px] pb-[34px]">
+                  Qanday xizmatlardan foydalanishni xoxlaysiz?
+                </h1>
+                <div class="checbox grid gap-[30px]">
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Backend</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">CRM ishlab chiqish</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Internet magazin ishlab chiqish</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Logotip va Brandbook</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Portal ishlab chiqish</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Veb dizayn</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Mobilograf</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Frontend</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Grafik dizayn</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Motion dizayn</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Mobil ilova ishlab chiqish</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Veb sayt ishlab chiqish</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">SMM dizayn</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div
+              class="contact__items--right rounded-[10px] py-[40px] px-[61px]"
+            >
+              <div class="contact__items--right-title">
+                <h1 class="font-semibold text-[24px] mb-[40px]">
+                  NIMANI MA'QUL KO'RASIZ?
+                </h1>
+              </div>
+              <div class="waters grid gap-[66px] grid-cols-2">
+                <div class="contact__items--right-img text-center">
+                  <img src="/images/darkCoffee.svg" alt="coffee" />
+                  <h1 class="font-semibold text-[21px] mt-[10px]">
+                    Achchiq kofe
+                  </h1>
+                </div>
+                <div class="contact__items--right-img text-center">
+                  <img src="/images/whiteCoffee.svg" alt="coffee" />
+                  <h1 class="font-semibold text-[21px] mt-[10px]">
+                    Sutli kofe
+                  </h1>
+                </div>
+                <div class="contact__items--right-img text-center">
+                  <img src="/images/water.svg" alt="coffee" />
+                  <h1 class="font-semibold text-[21px] mt-[10px]">Suv</h1>
+                </div>
+                <div class="contact__items--right-img text-center">
+                  <img src="/images/tea.svg" alt="coffee" />
+                  <h1 class="font-semibold text-[21px] mt-[10px]">Choy</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[#c0c0c0] w-full  min-h-[228px] mt-[120px] flex items-center ">
+      <div class="container">
+        <div class="footer__items flex items-center justify-between gap-[30px] text-center">
+          <div class="footer__items--title">
+            <h1 class="text-[54px] font-semibold">LOGO</h1>
+          </div>
+          <div class="footer__items--address flex items-center gap-[15px]">
+            <i class="bx bx-location-plus"></i>
+            <p class="font-semibold">
+              Manzil: Toshkent shahri, Sergeli tumani, Navro’z ko’cha 3-uy.
+              <br />
+              Mo’ljal: “ASIA AUTO” avtosalon ichki qismi
+            </p>
+          </div>
+          <div class="footer__items--contact">
+            <div
+              class="footer__items--contact-item flex items-center gap-[14px]"
+            >
+              <i class="bx bx-phone-call"></i>
+              <p class="font-semibold">+998 99 999 99 99</p>
+            </div>
+            <div
+              class="footer__items--contact-item flex items-center gap-[14px]"
+            >
+              <i class="bx bx-phone-call"></i>
+              <p class="font-semibold">+998 99 999 99 99</p>
+            </div>
+          </div>
+          <div class="footer__items--socials flex gap-[32px]">
+            <i class="bx bxl-telegram text-[30px]"></i>
+            <i class="bx bxl-facebook-circle text-[30px]"></i>
+            <i class="bx bxl-instagram text-[30px]"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/index.js"></script>
+</html>

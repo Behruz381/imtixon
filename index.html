@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMTIHON</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <header class="w-full py-[15px] fixed">
+      <div class="container mx-auto">
+        <nav class="nav flex items-center justify-between">
+          <div class="nav__menu text-[30px] cursor-pointer" id="menu">
+            <i class="bx bx-menu-alt-right"></i>
+          </div>
+          <div class="nav__logo font-medium text-[30px]">
+            <a href="index.html">LOGO</a>
+          </div>
+          <ul class="nav__ul flex gap-[16px]">
+            <li class="font-bold hover:text-[#6911AD]">
+              <a href="#">О компании</a>
+            </li>
+            <li class="font-bold hover:text-[#6911AD]">
+              <a href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="font-bold hover:text-[#6911AD]">
+              <a href="services.html">Услуги</a>
+            </li>
+            <li class="font-bold hover:text-[#6911AD]">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+ 
+          <div class="nav__left flex gap-[40px] items-center">
+            <button 
+            class="w-20 h-10 rounded-full bg-white flex items-center transition duration-300 focus:outline-none shadow"
+            onclick="toggleTheme()">
+            <div
+                id="switch-toggle"
+                class="w-12 h-12 relative rounded-full transition duration-500 transform bg-yellow-500 -translate-x-2 p-1 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+            </div>
+        </button>
+            <div class="nav__contact">
+              <p class="font-bold text-[20px]">+998 90 777-77-77</p>
+              <p class="font-bold">chotatam@gmail.com</p>
+            </div>
+            <div class="nav__btn">
+              <button
+                class="ease-in-out duration-300 bg-[#6911AD] text-white py-[14px] px-[21px] rounded-[7px] font-bold hover:bg-[#5454D4]"
+              >
+                Заказать звонок
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="menu pt-[18px] ease-in-out duration-300">
+      <div class="container px-[15px]">
+        <div
+          class="menu__header flex justify-between items-center text-white ease-linear"
+        >
+          <h1 class="text-[32px] font-normal">LOGO</h1>
+          <i class="bx bx-x text-[32px] cursor-pointer" id="close"></i>
+        </div>
+        <div class="menu__content">
+          <ul class="flex gap-[30px] flex-col mt-[40px]">
+            <li class="font-bold text-white text-[26px]">
+              <a href="index.html">О компании</a>
+            </li>
+            <li class="font-bold text-white text-[26px]">
+              <a href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="font-bold text-white text-[26px]">
+              <a href="services.html">Услуги</a>
+            </li>
+            <li class="font-bold text-white text-[26px]">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="menu__btn text-center">
+            <button
+              class="ease-in-out duration-300 bg-[#6911AD] text-white py-[22px] px-[44px] rounded-[141px] font-bold hover:bg-[#5454D4] mt-[292px] mb-[96px]"
+            >
+              (99) 999 9999
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="pt-[150px]">
+      <div class="container">
+        <div class="main__items flex justify-between">
+          <div class="main__items--content">
+            <h1 class="text-[40px] font-semibold mb-[40px]">
+              Biz veb-saytlar, ilovalarni <br />
+              ishlab chiqamiz
+            </h1>
+            <p class="font-normal mb-[100px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              <br />
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim <br />
+              ad minim veniam.
+            </p>
+            <a
+              href="#"
+              class="ease-in-out duration-300 text-[#6911AD] font-bold bg-[#6911AD] rounded-full py-[15px] text-[18px] w-[60px] absolute hover:text-white hover:w-[200px]"
+              ><span class="text-white">Портф</span>олио
+            </a>
+          </div>
+          <div class="main__items--img mb-[60px]">
+            <canvas
+              id="cobe"
+              style="max-width: 500px; max-height: 500px"
+              width="1000"
+              height="1000"
+            ></canvas>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="mt-[241px]">
+      <div class="container">
+        <div class="about flex justify-around items-center">
+          <div class="about__content">
+            <h1 class="font-semibold text-[50px] mb-[21px]">
+              Kompaniya haqida
+            </h1>
+            <p>
+              Agentlik-bu mijozlarga o'z bizneslari uchun sifatli va innovatsion
+              echimlarni <br />
+              taqdim etish maqsadida tashkil etilgan veb-agentlik. Bizning
+              jamoamiz mijozlarga <br />
+              moslashtirilgan va sifatli mahsulotni taklif qilish uchun yaqin
+              hamkorlikda <br />
+              ishlaydigan tajribali veb-dizayn, ishlab chiqish va marketing
+              mutaxassislaridan <br />
+              iborat. <br /><br />
+              Biz veb-dizayn, veb-sayt va mobil ilovalarni ishlab chiqish, SEO
+              optimallashtirish, <br />
+              kontent yaratish va reklama kampaniyalarini o'z ichiga olgan keng
+              ko'lamli <br />
+              xizmatlarni taklif etamiz. Biz eng yangi texnologiyalar va
+              innovatsion usullardan <br />
+              foydalangan holda brendni rivojlantirish va sotishni ko'paytirish
+              bilan <br />
+              shug'ullanamiz.
+            </p>
+          </div>
+          <div class="about__statistics flex gap-[100px]">
+            <div class="about__statistics--item-left">
+              <div class="about__statistics--item text-center">
+                <h1 class="text-[50px] font-semibold">20+</h1>
+                <p>Проектов запустил</p>
+              </div>
+              <div class="about__statistics--item text-center">
+                <h1 class="text-[50px] font-semibold">12+</h1>
+                <p>Профессионалов</p>
+              </div>
+            </div>
+            <div class="about__statistics--item-right">
+              <div class="about__statistics--item text-center">
+                <h1 class="text-[50px] font-semibold">4 года</h1>
+                <p>Опыта разработки</p>
+              </div>
+              <div class="about__statistics--item text-center">
+                <h1 class="text-[50px] font-semibold">4 года</h1>
+                <p>Опыта разработки</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__cards--title">
+          <h1 class="font-bold text-[36px] mt-[95px] text-center mb-[40px]">
+            Bizning afzalliklarimiz
+          </h1>
+        </div>
+        <div class="about__cards">
+          <div class="about__card rounded-[20px] pt-[30px] pb-[24px] px-[25px]">
+            <img src="/images/Vector.svg" alt="img" />
+            <h1 class="font-bold pt-[35px] pb-[10px]">Individual yondashuv</h1>
+
+            <p>
+              Biz har bir mijozga g'amxo'rlik qilamiz va ularning <br />
+              ehtiyojlariga javob beradigan echimlarni yaratamiz
+            </p>
+          </div>
+          <div class="about__card rounded-[20px] pt-[30px] pb-[24px] px-[25px]">
+            <img src="/images/Vector1.svg" alt="img" />
+            <h1 class="font-bold pt-[35px] pb-[10px]">Individual yondashuv</h1>
+
+            <p>
+              Biz har bir mijozga g'amxo'rlik qilamiz va ularning <br />
+              ehtiyojlariga javob beradigan echimlarni yaratamiz
+            </p>
+          </div>
+          <div class="about__card rounded-[20px] pt-[30px] pb-[24px] px-[25px]">
+            <img src="/images/Vector2.svg" alt="img" />
+            <h1 class="font-bold pt-[35px] pb-[10px]">Individual yondashuv</h1>
+
+            <p>
+              Biz har bir mijozga g'amxo'rlik qilamiz va ularning <br />
+              ehtiyojlariga javob beradigan echimlarni yaratamiz
+            </p>
+          </div>
+          <div class="about__card rounded-[20px] pt-[30px] pb-[24px] px-[25px]">
+            <img src="/images/Vector3.svg" alt="img" />
+            <h1 class="font-bold pt-[35px] pb-[10px]">Individual yondashuv</h1>
+
+            <p>
+              Biz har bir mijozga g'amxo'rlik qilamiz va ularning <br />
+              ehtiyojlariga javob beradigan echimlarni yaratamiz
+            </p>
+          </div>
+          <div class="about__card rounded-[20px] pt-[30px] pb-[24px] px-[25px]">
+            <img src="/images/Vector4.svg" alt="img" />
+            <h1 class="font-bold pt-[35px] pb-[10px]">Individual yondashuv</h1>
+
+            <p>
+              Biz har bir mijozga g'amxo'rlik qilamiz va ularning <br />
+              ehtiyojlariga javob beradigan echimlarni yaratamiz
+            </p>
+          </div>
+          <div class="about__card rounded-[20px] pt-[30px] pb-[24px] px-[25px]">
+            <img src="/images/Vector5.svg" alt="img" />
+            <h1 class="font-bold pt-[35px] pb-[10px]">Individual yondashuv</h1>
+
+            <p>
+              Biz har bir mijozga g'amxo'rlik qilamiz va ularning <br />
+              ehtiyojlariga javob beradigan echimlarni yaratamiz
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="projects__title">
+          <h1 class="font-bold text-[36px] mt-[95px] text-center mb-[40px]">
+            Bajargan loyihalarimiz
+          </h1>
+        </div>
+        <div class="project__items flex justify-center bg-white mb-[40px]">
+          <ul
+            class="projects__ul flex justify-center flex-wrap gap-[60px] border-2 border-[rgba(255, 255, 255, 0.5)] rounded-[90px] w-[664px] h-[55px] py-[16px] px-[35px]"
+          >
+            <li class="font-bold text-[16px]"><a href="#">Barchasi</a></li>
+            <li class="font-bold text-[16px]"><a href="#">Veb sayt</a></li>
+            <li class="font-bold text-[16px]"><a href="#">Veb dizayn</a></li>
+            <li class="font-bold text-[16px]"><a href="#">SMM</a></li>
+            <li class="font-bold text-[16px]"><a href="#">Mobil ilova</a></li>
+          </ul>
+        </div>
+        <div class="project__cards">
+          <div class="project__cards--item w-[400px] h-[362px] cursor-pointer">
+            <img src="/images/img1.png" alt="img" class="w-[400px] h-[362px]" />
+            <div
+              class="item__content w-[375px] h-[332px] rounded-[5px] opacity-0 hover:opacity-100 ease-in-out duration-200 relative bottom-[346px] left-[13px]"
+            >
+              <div class="content py-[30px] px-[25px] justify-between">
+                <p class="text-white absolute bottom-[30px]">
+                  UYMAKON mobil ilovasi
+                </p>
+                <i
+                  class="bx bx-right-top-arrow-circle text-white text-[40px] absolute right-[25px]"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="project__cards--item w-[400px] h-[362px] cursor-pointer">
+            <img src="/images/img2.png" alt="img" class="w-[400px] h-[362px]" />
+            <div
+              class="item__content w-[375px] h-[332px] rounded-[5px] opacity-0 hover:opacity-100 ease-in-out duration-200 relative bottom-[346px] left-[13px]"
+            >
+              <div class="content py-[30px] px-[25px] justify-between">
+                <p class="text-white absolute bottom-[30px]">
+                  UYMAKON mobil ilovasi
+                </p>
+                <i
+                  class="bx bx-right-top-arrow-circle text-white text-[40px] absolute right-[25px]"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="project__cards--item w-[400px] h-[362px] cursor-pointer">
+            <img src="/images/img3.png" alt="img" class="w-[400px] h-[362px]" />
+            <div
+              class="item__content w-[375px] h-[332px] rounded-[5px] opacity-0 hover:opacity-100 ease-in-out duration-200 relative bottom-[346px] left-[13px]"
+            >
+              <div class="content py-[30px] px-[25px] justify-between">
+                <p class="text-white absolute bottom-[30px]">
+                  UYMAKON mobil ilovasi
+                </p>
+                <i
+                  class="bx bx-right-top-arrow-circle text-white text-[40px] absolute right-[25px]"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="project__cards--item w-[400px] h-[362px] cursor-pointer">
+            <img src="/images/img4.png" alt="img" class="w-[400px] h-[362px]" />
+            <div
+              class="item__content w-[375px] h-[332px] rounded-[5px] opacity-0 hover:opacity-100 ease-in-out duration-200 relative bottom-[346px] left-[13px]"
+            >
+              <div class="content py-[30px] px-[25px] justify-between">
+                <p class="text-white absolute bottom-[30px]">
+                  UYMAKON mobil ilovasi
+                </p>
+                <i
+                  class="bx bx-right-top-arrow-circle text-white text-[40px] absolute right-[25px]"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="project__cards--item w-[400px] h-[362px] cursor-pointer">
+            <img src="/images/img5.png" alt="img" class="w-[400px] h-[362px]" />
+            <div
+              class="item__content w-[375px] h-[332px] rounded-[5px] opacity-0 hover:opacity-100 ease-in-out duration-200 relative bottom-[346px] left-[13px]"
+            >
+              <div class="content py-[30px] px-[25px] justify-between">
+                <p class="text-white absolute bottom-[30px]">
+                  UYMAKON mobil ilovasi
+                </p>
+                <i
+                  class="bx bx-right-top-arrow-circle text-white text-[40px] absolute right-[25px]"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="project__cards--item w-[400px] h-[362px] cursor-pointer">
+            <img src="/images/img6.png" alt="img" class="w-[400px] h-[362px]" />
+            <div
+              class="item__content w-[375px] h-[332px] rounded-[5px] opacity-0 hover:opacity-100 ease-in-out duration-200 relative bottom-[346px] left-[13px]"
+            >
+              <div class="content py-[30px] px-[25px] justify-between">
+                <p class="text-white absolute bottom-[30px]">
+                  UYMAKON mobil ilovasi
+                </p>
+                <i
+                  class="bx bx-right-top-arrow-circle text-white text-[40px] absolute right-[25px]"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div
+          class="services border-2 border-[rgba(255, 255, 255, 0.5)] bg-white mt-[120px] rounded-[20px]"
+        >
+          <div class="services__title">
+            <h1 class="font-bold text-[30px] mt-[40px] text-center mb-[88px]">
+              Bizning xizmatlar
+            </h1>
+          </div>
+          <div class="services__items pb-[89px]">
+            <div class="services__item text-center">
+              <img src="/images/Icon1.svg" alt="img" class="inline" />
+              <h1 class="font-semibold text-[28px] py-[20px]">Veb saytlar</h1>
+              <p class="text-[rgba(39, 39, 39, 0.7)]">
+                Bizdan eng yaxshi va eng zo'r <br />
+                sifatga ega platforma yarating.
+              </p>
+            </div>
+            <div class="services__item text-center">
+              <img src="/images/Icon2.svg" alt="img" class="inline" />
+              <h1 class="font-semibold text-[28px] py-[20px]">UI/UX Dizayn</h1>
+              <p class="text-[rgba(39, 39, 39, 0.7)]">
+                Bizdan eng yaxshi va eng zo'r <br />
+                sifatga ega platforma yarating.
+              </p>
+            </div>
+            <div class="services__item text-center">
+              <img src="/images/Icon3.svg" alt="img" class="inline" />
+              <h1 class="font-semibold text-[28px] py-[20px]">
+                Mobil ilovalar
+              </h1>
+              <p class="text-[rgba(39, 39, 39, 0.7)]">
+                Bizdan eng yaxshi va eng zo'r <br />
+                sifatga ega platforma yarating.
+              </p>
+            </div>
+            <div class="services__item text-center">
+              <img src="/images/Icon4.svg" alt="img" class="inline" />
+              <h1 class="font-semibold text-[28px] py-[20px]">SMM</h1>
+              <p class="text-[rgba(39, 39, 39, 0.7)]">
+                Bizdan eng yaxshi va eng zo'r <br />
+                sifatga ega platforma yarating.
+              </p>
+            </div>
+            <div class="services__item text-center">
+              <img src="/images/Icon5.svg" alt="img" class="inline" />
+              <h1 class="font-semibold text-[28px] py-[20px]">Grafik dizayn</h1>
+              <p class="text-[rgba(39, 39, 39, 0.7)]">
+                Bizdan eng yaxshi va eng zo'r <br />
+                sifatga ega platforma yarating.
+              </p>
+            </div>
+            <div class="services__item text-center">
+              <img src="/images/Icon6.svg" alt="img" class="inline" />
+              <h1 class="font-semibold text-[28px] py-[20px]">Motion dizayn</h1>
+              <p class="text-[rgba(39, 39, 39, 0.7)]">
+                Bizdan eng yaxshi va eng zo'r <br />
+                sifatga ega platforma yarating.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="blog__title">
+          <h1 class="font-bold text-[36px] mt-[95px] text-center mb-[40px]">
+            Blog yangiliklarimiz
+          </h1>
+        </div>
+        <div class="blog__cards flex justify-center gap-[31px]">
+          <div
+            class="blog__card w-[433px] border-[1px] border-[rgba(255, 255, 255, 0.9)] rounded-[20px]"
+          >
+            <img src="/images/blogImg1.png" alt="img" />
+            <div class="blog__card--body py-[20px] px-[30px]">
+              <h1 class="font-semibold text-[20px] pb-[39px]">
+                «QA» mutaxassisi qanday bo'lishi kerak?
+              </h1>
+              <p class="text-[rgba(39, 39, 39, 0.7)] pb-[21px]">
+                🔥 Ma'lumki, «Najot Ta'lim»dagi kurslar qatoriga «QA», ya'ni
+                «Dasturiy ta'minotni testlash» kursi ham qo'shilgan.
+              </p>
+              <div class="blog__card--body-footer flex justify-between">
+                <p class="font-semibold">#hi_tech</p>
+                <small class="text-[#272727]">14:45 22/02/23</small>
+              </div>
+            </div>
+          </div>
+          <div
+            class="blog__card w-[433px] border-[1px] border-[rgba(255, 255, 255, 0.9)] rounded-[20px]"
+          >
+            <img src="/images/blogImg2.png" alt="img" />
+            <div class="blog__card--body py-[20px] px-[30px]">
+              <h1 class="font-semibold text-[20px] pb-[39px]">
+                «Najot Ta'lim» logosi haqida nimalarni bilasiz?
+              </h1>
+              <p class="text-[rgba(39, 39, 39, 0.7)] pb-[21px]">
+                🔥 Ma'lumki, «Najot Ta'lim»dagi kurslar qatoriga «QA», ya'ni
+                «Dasturiy ta'minotni testlash» kursi ham qo'shilgan.
+              </p>
+              <div class="blog__card--body-footer flex justify-between">
+                <p class="font-semibold">#hi_tech</p>
+                <small class="text-[#272727]">14:45 22/02/23</small>
+              </div>
+            </div>
+          </div>
+          <div
+            class="blog__card w-[433px] border-[1px] border-[rgba(255, 255, 255, 0.9)] rounded-[20px]"
+          >
+            <img src="/images/blogImg3.png" alt="img" />
+            <div class="blog__card--body py-[20px] px-[30px]">
+              <h1 class="font-semibold text-[20px] pb-[39px]">
+                🙌 «TechJobs» kompaniyasi Java dasturchilarni maxsus «Deep
+                interview»ga taklif qiladi!
+              </h1>
+              <p class="text-[rgba(39, 39, 39, 0.7)] pb-[21px]">
+                🔥 Ma'lumki, «Najot Ta'lim»dagi kurslar qatoriga «QA», ya'ni
+                «Dasturiy ta'minotni testlash» kursi ham qo'shilgan.
+              </p>
+              <div class="blog__card--body-footer flex justify-between">
+                <p class="font-semibold">#hi_tech</p>
+                <small class="text-[#272727]">14:45 22/02/23</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="partners__title">
+          <h1 class="font-bold text-[36px] mt-[95px] text-center mb-[40px]">
+            Bizning jamoa
+          </h1>
+        </div>
+        <div class="partners flex justify-center gap-[31px]">
+          <div class="partners__card w-[317px]">
+            <img src="/images/avatar1.png" alt="avatar" />
+            <div
+              class="partners__card--content bg-white rounded-[20px] border-[1px] border-[#999999] py-[15px] px-[80px] text-center relative bottom-[40px]"
+            >
+              <h1 class="font-semibold text-[24px]">John Doe</h1>
+              <small class="text-[rgba(39, 39, 39, 0.8)] text-[16px]"
+                >Frontend dasturchi</small
+              >
+            </div>
+          </div>
+          <div class="partners__card w-[317px]">
+            <img src="/images/avatar2.png" alt="avatar" />
+            <div
+              class="partners__card--content bg-white rounded-[20px] border-[1px] border-[#999999] py-[15px] px-[80px] text-center relative bottom-[40px]"
+            >
+              <h1 class="font-semibold text-[24px]">Tonny Cross</h1>
+              <small class="text-[rgba(39, 39, 39, 0.8)] text-[16px]"
+                >SMM designer</small
+              >
+            </div>
+          </div>
+          <div class="partners__card w-[317px]">
+            <img src="/images/avatar3.png" alt="avatar" />
+            <div
+              class="partners__card--content bg-white rounded-[20px] border-[1px] border-[#999999] py-[15px] px-[80px] text-center relative bottom-[40px]"
+            >
+              <h1 class="font-semibold text-[24px]">Lionel Messi</h1>
+              <small class="text-[rgba(39, 39, 39, 0.8)] text-[16px]"
+                >Project Manager</small
+              >
+            </div>
+          </div>
+          <div class="partners__card w-[317px]">
+            <img src="/images/avatar4.png" alt="avatar" />
+            <div
+              class="partners__card--content bg-white rounded-[20px] border-[1px] border-[#999999] py-[15px] px-[80px] text-center relative bottom-[40px]"
+            >
+              <h1 class="font-semibold text-[24px]">John Cena</h1>
+              <small class="text-[rgba(39, 39, 39, 0.8)] text-[16px]"
+                >UX/UI web</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div
+          class="contact border-[1px] border-[#999999] w-full rounded-[20px] mt-[120px]"
+        >
+          <div
+            class="contact__items flex justify-between items-center py-[60px] px-[80px] gap-[10px]"
+          >
+            <div class="contact__items--left">
+              <div class="contact__items--left-title mb-[40px]">
+                <h1 class="text-[28px] font-semibold">
+                  Sizni bir finjon qahva ustida loyihangizni
+                  batafsil muhokama qilishga mamnuniyat ila 
+                  taklif qilamiz.
+                </h1>
+              </div>
+              <div class="contact__items--left-inputs flex flex-col justify-center gap-[20px]">
+                <input
+                  type="text"
+                  placeholder="Ismingiz"
+                  id="name"
+                  class="border-b-[1px] border-[#272727] max-w-[499px] p-[8px]"
+                />
+                <input
+                  type="number"
+                  placeholder="Telefon raqamingiz"
+                  id="number"
+                  class="border-b-[1px] border-[#272727] max-w-[499px] p-[8px]"
+                />
+                <input
+                  type="text"
+                  placeholder="G'oyangiz xaqida qisqacha (Muhim emas)"
+                  id="text"
+                  class="border-b-[1px] border-[#272727] max-w-[499px] p-[8px]"
+                />
+              </div>
+              <div class="contact__items--left-checkboxes my-[40px]">
+                <h1 class="font-semibold text-[24px] pb-[34px]">
+                  Qanday xizmatlardan foydalanishni xoxlaysiz?
+                </h1>
+                <div class="checbox grid gap-[30px]">
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Backend</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">CRM ishlab chiqish</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Internet magazin ishlab chiqish</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Logotip va Brandbook</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Portal ishlab chiqish</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Veb dizayn</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Mobilograf</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Frontend</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Grafik dizayn</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Motion dizayn</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Mobil ilova ishlab chiqish</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">Veb sayt ishlab chiqish</p>
+                  </label>
+                  <label for="#" class="flex gap-[10px]">
+                    <input type="checkbox" />
+                    <p class="font-semibold">SMM dizayn</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div
+              class="contact__items--right rounded-[10px] py-[40px] px-[61px]"
+            >
+              <div class="contact__items--right-title">
+                <h1 class="font-semibold text-[24px] mb-[40px]">
+                  NIMANI MA'QUL KO'RASIZ?
+                </h1>
+              </div>
+              <div class="waters grid gap-[66px] grid-cols-2">
+                <div class="contact__items--right-img text-center">
+                  <img src="/images/darkCoffee.svg" alt="coffee" />
+                  <h1 class="font-semibold text-[21px] mt-[10px]">
+                    Achchiq kofe
+                  </h1>
+                </div>
+                <div class="contact__items--right-img text-center">
+                  <img src="/images/whiteCoffee.svg" alt="coffee" />
+                  <h1 class="font-semibold text-[21px] mt-[10px]">
+                    Sutli kofe
+                  </h1>
+                </div>
+                <div class="contact__items--right-img text-center">
+                  <img src="/images/water.svg" alt="coffee" />
+                  <h1 class="font-semibold text-[21px] mt-[10px]">Suv</h1>
+                </div>
+                <div class="contact__items--right-img text-center">
+                  <img src="/images/tea.svg" alt="coffee" />
+                  <h1 class="font-semibold text-[21px] mt-[10px]">Choy</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[#c0c0c0] w-full  min-h-[228px] mt-[120px] flex items-center ">
+      <div class="container">
+        <div class="footer__items flex items-center justify-between gap-[30px] text-center">
+          <div class="footer__items--title">
+            <h1 class="text-[54px] font-semibold">LOGO</h1>
+          </div>
+          <div class="footer__items--address flex items-center gap-[15px]">
+            <i class="bx bx-location-plus"></i>
+            <p class="font-semibold">
+              Manzil: Toshkent shahri, Sergeli tumani, Navro’z ko’cha 3-uy.
+              <br />
+              Mo’ljal: “ASIA AUTO” avtosalon ichki qismi
+            </p>
+          </div>
+          <div class="footer__items--contact">
+            <div
+              class="footer__items--contact-item flex items-center gap-[14px]"
+            >
+              <i class="bx bx-phone-call"></i>
+              <p class="font-semibold">+998 99 999 99 99</p>
+            </div>
+            <div
+              class="footer__items--contact-item flex items-center gap-[14px]"
+            >
+              <i class="bx bx-phone-call"></i>
+              <p class="font-semibold">+998 99 999 99 99</p>
+            </div>
+          </div>
+          <div class="footer__items--socials flex gap-[32px]">
+            <i class="bx bxl-telegram text-[30px]"></i>
+            <i class="bx bxl-facebook-circle text-[30px]"></i>
+            <i class="bx bxl-instagram text-[30px]"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- <script type="module">
+      import createGlobe from "https://cdn.skypack.dev/cobe";
+
+      let phi = 0;
+      let canvas = document.getElementById("cobe");
+
+      const globe = createGlobe(canvas, {
+        devicePixelRatio: 2,
+        width: 1000,
+        height: 1000,
+        phi: 0,
+        theta: 0,
+        dark: 0,
+        diffuse: 1.2,
+        scale: 1,
+        mapSamples: 16000,
+        mapBrightness: 6,
+        baseColor: [1, 1, 1],
+        markerColor: [1, 0.5, 1],
+        glowColor: [1, 1, 1],
+        offset: [0, 0],
+        markers: [
+          { location: [37.7595, -122.4367], size: 0.03 },
+          { location: [40.7128, -74.006], size: 0.1 },
+        ],
+        onRender: (state) => {
+          // Called on every animation frame.
+          // `state` will be an empty object, return updated params.
+          state.phi = phi;
+          phi += 0.01;
+        },
+      });
+    </script> -->
+  </body>
+  <script src="/index.js"></script>
+</html>

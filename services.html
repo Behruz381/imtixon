@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="w-full py-[15px] fixed">
+      <div class="container mx-auto">
+        <nav class="nav flex items-center justify-between">
+          <div class="nav__menu text-[30px] cursor-pointer" id="menu">
+            <i class="bx bx-menu-alt-right"></i>
+          </div>
+          <div class="nav__logo font-medium text-[30px]">
+            <a href="index.html">LOGO</a>
+          </div>
+          <ul class="nav__ul flex gap-[16px]">
+            <li class="font-bold hover:text-[#6911AD]">
+              <a href="index.html">О компании</a>
+            </li>
+            <li class="font-bold hover:text-[#6911AD]">
+              <a href="/portfolio.html">Портфолио</a>
+            </li>
+            <li class="font-bold hover:text-[#6911AD]">
+              <a href="#">Услуги</a>
+            </li>
+            <li class="font-bold hover:text-[#6911AD]">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="nav__left flex gap-[40px] items-center">
+            <button 
+            class="w-20 h-10 rounded-full bg-white flex items-center transition duration-300 focus:outline-none shadow"
+            onclick="toggleTheme()">
+            <div
+                id="switch-toggle"
+                class="w-12 h-12 relative rounded-full transition duration-500 transform bg-yellow-500 -translate-x-2 p-1 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+            </div>
+        </button>
+            <div class="nav__contact">
+              <p class="font-bold text-[20px]">+998 90 777-77-77</p>
+              <p class="font-bold">chotatam@gmail.com</p>
+            </div>
+            <div class="nav__btn">
+              <button
+                class="ease-in-out duration-300 bg-[#6911AD] text-white py-[14px] px-[21px] rounded-[7px] font-bold hover:bg-[#5454D4]"
+              >
+                Заказать звонок
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="menu pt-[18px] ease-in-out duration-300">
+      <div class="container px-[15px]">
+        <div
+          class="menu__header flex justify-between items-center text-white ease-linear"
+        >
+          <h1 class="text-[32px] font-normal">LOGO</h1>
+          <i class="bx bx-x text-[32px] cursor-pointer" id="close"></i>
+        </div>
+        <div class="menu__content">
+          <ul class="flex gap-[30px] flex-col mt-[40px]">
+            <li class="font-bold text-white text-[26px]">
+              <a href="index.html">О компании</a>
+            </li>
+            <li class="font-bold text-white text-[26px]">
+              <a href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="font-bold text-white text-[26px]">
+              <a href="services.html">Услуги</a>
+            </li>
+            <li class="font-bold text-white text-[26px]">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="menu__btn text-center">
+            <button
+              class="ease-in-out duration-300 bg-[#6911AD] text-white py-[22px] px-[44px] rounded-[141px] font-bold hover:bg-[#5454D4] mt-[292px] mb-[96px]"
+            >
+              (99) 999 9999
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="pt-[200px] pb-[120px]">
+      <div class="container mx-auto">
+        <div class="news flex justify-between">
+          <div class="news__item">
+            <img
+              src="/images/services1.png"
+              class="w-[1000px] h-[757px]"
+              alt="img"
+            />
+            <div class="news__item border-[2px] border-[#4E4E4E] rounded-[20px] max-w-[1012px] mt-[41px] p-[40px]">
+                <h1 class="font-bold text-[30px] pb-[20px]">
+                  IT Parkʼda eksportga yo‘naltirilgan IT-kompaniyalar bilan <br />
+                  uchrashuv bo‘lib o‘tdi
+                </h1>
+                <p class="pb-[25px]">
+                  24-fevral kuni IT Park Toshkent filialida IT Park direktori Farhod
+                  Ibragimov va tashkilotning rezident-eksportyor kompaniyalari
+                  oʻrtasida uchrashuv bo‘lib o‘tdi. Tadbirning maqsadi – IT va BPO
+                  xizmatlari eksportining joriy holatini va O‘zbekistonda IT
+                  eksportini oshirish choralarini muhokama qilishdan iborat.
+                  Uchrashuv davomida Farhod Zairovich eksportning joriy holatiga oid
+                  ayrim statistik ma’lumotlar bilan boʻlishdi. Shunday qilib, oʻtgan
+                  yilgi maʼlumotlarga koʻra, IT-xizmatlar eksporti hajmi $140
+                  millionni tashkil etdi, eksportning qariyb 48 foizi dasturiy
+                  taʼminotni yaratuvchi kompaniyalariga toʻgʻri keladi, 44 foizdan
+                  biroz koʻprogʻi esa biznes jarayonlari autsorsingi bilan
+                  shugʻullanuvchi kompaniyalarga toʻgʻri keladi. Bundan tashqari,
+                  eksportning 80% dan ziyodi AQSh bozoriga toʻgʻri keladi, ammo
+                  boshqa koʻplab potensial bozorlar, jumladan Yevropa, Kanada va
+                  Sharq mamlakatlari mavjud. “Afsuski, eksportning asosiy qismi
+                  Toshkentdan amalga oshiriladi, demak, biz boshqa hududlardan ham
+                  eksportni yanada oshirishga e’tibor qaratishimiz kerak.
+                  Barchangizga ma’lumki, Prezident bizga IT-xizmatlar eksportini 300
+                  million dollargacha oshirish vazifasini qo‘ydi. Ishonchim komilki,
+                  birgalikdagi sa’y-harakatlarimiz va bilimlarimiz bilan eksportni
+                  oshirish bo‘yicha samarali strategiyalarni ishlab chiqa olamiz va
+                  Oʻzbekistonda IT sohasi rivojiga oʻz hissamizni qoʻsha olamiz”, –
+                  dedi IT Park direktori.
+                </p>
+                <img src="/images/services2.png" alt="" />
+                <p class="pt-[25px]">
+                  Hozirda IT Park Uzbekistan xalqaro moliya markazi hamda
+                  kompaniyalarga yangi mahsulot va xizmatlarni nazorat qilinadigan
+                  muhitda testdan o‘tkazish imkonini beruvchi tartibga soluvchi
+                  sandbox yaratish ustida ishlamoqda. Bu xorijiy kompaniyalar uchun
+                  qulaylik va xavfsizlik darajasini taʼminlaydigan shartnomalar va
+                  kelishuvlar uchun ingliz huquqidan foydalanish imkoniyatini oʻz
+                  ichiga oladi. Tashkilot, shuningdek, rezident eksport qiluvchi
+                  kompaniyalar uchun maxsus raqamli bankni ishlab chiqish
+                  jarayonida. U ularning ehtiyojlariga moslashtirilgan bir qator
+                  moliyaviy xizmatlarni, shu jumladan, xorijiy valyutasidagi
+                  hisoblar va raqamli toʻlov tizimlarini taklif qiladi. Asosiy qism
+                  yakunida savol-javoblar sessiyasi boshlandi. Ayrim rezident
+                  kompaniyalar vakillari eksportdagi muvaffaqiyatlari bilan
+                  boʻlishdilar, shuningdek, birgalikdagi sa’y-harakatlar bilan
+                  qo‘yilgan vazifaga qanday erishish mumkinligi bo‘yicha takliflar
+                  bilan almashdilar. Bundan tashqari, kompaniyalar duch kelgan
+                  toʻsiqlar haqida gapirdilar. Xususan, relokatsiya paytidagi uy-joy
+                  muammosi va uy-joy narxining oshishi haqida soʻz yuritildi.
+                  Takliflar qatorida bojxona rasmiylashtiruvi uchun imtiyozlar va
+                  xorijiy mamlakatlarga IT sohasidagi rasmiy tashriflarda ishtirok
+                  etish so‘rovi bildirildi.
+                </p>
+              </div>
+          </div>
+          <div class="news__items">
+           <div class="news__item--left mb-[30px] border-[2px] border-[ #999999] rounded-[20px] ">
+            <img src="/images/card1.svg" alt="img">
+            <h1 class="font-semibold text-[20px] py-[15px] px-[20px]">Dizaynni o'rgangandan keyin <br> nima qilish kerak?</h1>
+           </div>
+           <div class="news__item--left mb-[30px] border-[2px] border-[ #999999] rounded-[20px] ">
+            <img src="/images/card2.svg" alt="img">
+            <h1 class="font-semibold text-[20px] py-[15px] px-[20px]">Dizaynni o'rgangandan keyin <br> nima qilish kerak?</h1>
+           </div>
+           <div class="news__item--left mb-[30px] border-[2px] border-[ #999999] rounded-[20px] ">
+            <img src="/images/card3.svg" alt="img">
+            <h1 class="font-semibold text-[20px] py-[15px] px-[20px]">Dizaynni o'rgangandan keyin <br> nima qilish kerak?</h1>
+           </div>
+           <div class="news__item--left border-[2px] border-[ #999999] rounded-[20px] ">
+            <img src="/images/card4.svg" alt="img">
+            <h1 class="font-semibold text-[20px] py-[15px] px-[20px]">Dizaynni o'rgangandan keyin <br> nima qilish kerak?</h1>
+           </div>
+          </div>
+         
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[#c0c0c0] w-full  min-h-[228px] mt-[120px] flex items-center ">
+      <div class="container">
+        <div class="footer__items flex items-center justify-between gap-[30px] text-center">
+          <div class="footer__items--title">
+            <h1 class="text-[54px] font-semibold">LOGO</h1>
+          </div>
+          <div class="footer__items--address flex items-center gap-[15px]">
+            <i class="bx bx-location-plus"></i>
+            <p class="font-semibold">
+              Manzil: Toshkent shahri, Sergeli tumani, Navro’z ko’cha 3-uy.
+              <br />
+              Mo’ljal: “ASIA AUTO” avtosalon ichki qismi
+            </p>
+          </div>
+          <div class="footer__items--contact">
+            <div
+              class="footer__items--contact-item flex items-center gap-[14px]"
+            >
+              <i class="bx bx-phone-call"></i>
+              <p class="font-semibold">+998 99 999 99 99</p>
+            </div>
+            <div
+              class="footer__items--contact-item flex items-center gap-[14px]"
+            >
+              <i class="bx bx-phone-call"></i>
+              <p class="font-semibold">+998 99 999 99 99</p>
+            </div>
+          </div>
+          <div class="footer__items--socials flex gap-[32px]">
+            <i class="bx bxl-telegram text-[30px]"></i>
+            <i class="bx bxl-facebook-circle text-[30px]"></i>
+            <i class="bx bxl-instagram text-[30px]"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/index.js"></script>
+</html>
